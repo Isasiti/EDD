@@ -80,13 +80,13 @@ class LinkedList:
       yield current
       current = current.next
 
-  def append(self,value): # Adicionar al final
+  def append(self,value):
     newnode = Node(value)
     if self.__head is None:
       self.__head = newnode
       self.__tail = newnode
     else:
-      self.__tail.next = newnode #enlazo nuevo nodo
+      self.__tail.next = newnode
       self.__tail = newnode
     self.__size += 1
 
